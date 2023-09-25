@@ -1,0 +1,58 @@
+@keyframes ImgZoom {
+    0%   {transform: scale(1)rotate(0deg);}
+    50%   {transform: scale(1.5)rotate(45deg);}
+    100%   {transform: scale(1)rotate(0deg);}
+  }
+.envelope{
+    stroke: white;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    animation: ImgZoom 2s ease infinite;
+}
+.envelope:hover{
+    animation-play-state:paused;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(104, 235, 228);
+}
+
+.container{
+    width: 75vw;
+    height: 75vh;
+    background-color:blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+::placeholder{
+    color: white;
+}
+.h1{
+    color: white;
+    margin-bottom: auto;
+}
+input:hover{
+    font-size: 17px;
+    transition: all 0.6s;
+    cursor: pointer;
+}
